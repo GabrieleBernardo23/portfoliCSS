@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #240046;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navegacao > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    color: whitesmoke;
+    transition: .6s;
+}
+
+.navegacao > a:hover {
+    color: rgb(94, 255, 0);
+}
+
+.home {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.conteudo {
+    max-width: 600px;
+}
+
+.conteudo > h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.conteudo > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(94, 255, 0);
+}
+
+.conteudo > p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.rodape {
+    position: static;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.rodape > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgb(94, 255, 0);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(94, 255, 0);
+    text-decoration: none;
+    
+}
+
+.estud {
+    display: block;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.estud > h3 {
+        font-size: 32px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.assuntos {
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "adm biomed"
+    "gestao financ"
+    "power web"
+    ;
+}
+
+.descrit1 {
+    display: none;
+    color: brown;
+    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+}
+.adm:hover .descrit1 {
+    display: block;
+}
+.descrit2 {
+    display: none;
+    color: #a52a2a;
+    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+}
+.biomed:hover .descrit2 {
+    display: block;
+}
+.descrit3 {
+    display: none;
+    color: brown;
+    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+}
+.gestao:hover .descrit3 {
+    display: block;
+}
+.descrit4 {
+    display: none;
+    color: brown;    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+    
+}
+.financ:hover .descrit4 {
+    display: block;
+}
+.descrit5 {
+    display: none;
+    color: brown;    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+    
+}
+.power:hover .descrit5 {
+    display: block;
+}
+.descrit6 {
+    display: none;
+    color: brown;    font-weight: bold;
+    text-shadow: 0 0 5px #a52a2a;
+    
+}
+.web:hover .descrit6 {
+    display: block;
+}
